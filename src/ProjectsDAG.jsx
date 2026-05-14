@@ -6,7 +6,7 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Play, ArrowDownRight, ArrowDownLeft, ArrowUpRight, ArrowUpLeft } from 'lucide-react';
+import { X, Play, ArrowDownRight, ArrowDownLeft, ArrowUpRight, ArrowUpLeft, ExternalLink } from 'lucide-react';
 
 const nodeDefs = [
   { id: 'start', position: { x: 50, y: 200 }, data: { label: 'Current Horizon' }, type: 'input' },
@@ -66,7 +66,8 @@ const projectDetails = {
       "Built a self-evolving complex ML system generating operational rules in real time.",
       "Engineered a multi-agent LLM system with multi-model orchestration.",
       "Secured top-3 finish among 60+ teams at WeaveHacks 3."
-    ]
+    ],
+    link: "https://chameleon-honeypot.vercel.app/"
   },
   p2: {
     title: "DemonChain.ai",
@@ -101,7 +102,8 @@ const projectDetails = {
       "Built a natural language query engine using LangChain to allow users to ask questions about their spending.",
       "Implemented automated financial forecasting using historical data and GPT-4 reasoning.",
       "Integrated Neon PostgreSQL for serverless database scalability and high availability."
-    ]
+    ],
+    link: "https://quickbooks-ai-clone.vercel.app/"
   },
   p1: {
     title: "Text-to-Pipeline AI Agent",
@@ -337,6 +339,22 @@ export default function ProjectsDAG() {
 
             <div className="sidebar-content">
               <h2 className="sidebar-title">{selectedProject.title}</h2>
+              {selectedProject.link && (
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  style={{ marginBottom: '20px' }}
+                >
+                  <a 
+                    href={selectedProject.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="live-demo-btn mono"
+                  >
+                    <ExternalLink size={16} /> LIVE_DEMO_v1.0
+                  </a>
+                </motion.div>
+              )}
               <p className="sidebar-subtitle mono">{selectedProject.subtitle}</p>
 
               <div className="tech-stack-row">
