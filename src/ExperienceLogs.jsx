@@ -12,14 +12,10 @@ const workData = [
     type: "FULL_TIME",
     status: "COMPLETED",
     highlights: [
-      "Architected enterprise-grade ML infrastructure using Agentic AI-powered ETL pipelines.",
-      "Integrated RAG frameworks and AI guardrails to process terabytes of unstructured, distributed data.",
-      "Improved data reliability for downstream consumer analytics by over 30%.",
-      "Led comprehensive LLM evaluation, fine-tuning, and knowledge distillation optimization cycles.",
-      "Validated outputs against production baselines, contributing to $75K+ in annual operational savings.",
-      "Engineered high-performance data models in Snowflake, cutting query execution latency by 35%.",
-      "Orchestrated containerized microservices (Docker, Kubernetes) via automated CI/CD pipelines.",
-      "Enhanced system scalability and reduced critical production downtime incidents by 40%."
+      "Architected and deployed enterprise-grade ML infrastructure using Agentic AI-powered ETL pipelines, integrating RAG frameworks and advanced AI guardrails to process and validate terabytes of unstructured and distributed data, improving downstream data reliability by over 30%.",
+      "Spearheaded comprehensive LLM evaluation and optimization initiatives, leveraging fine-tuning methodologies and knowledge distillation cycles to rigorously validate pipeline outputs against established production baselines, contributing to $75K+ in annual operational savings.",
+      "Engineered high-performance data warehousing solutions within Snowflake by redesigning core data models and optimizing complex SQL retrieval workflows for high-volume, concurrent querying, successfully cutting query execution latency by 35%.",
+      "Orchestrated the containerization and cloud deployment of on-demand microservices using Docker and Kubernetes via robust CI/CD pipelines, significantly enhancing system scalability and reducing critical production downtime incidents by 40%."
     ]
   },
   {
@@ -31,13 +27,9 @@ const workData = [
     type: "FULL_TIME",
     status: "COMPLETED",
     highlights: [
-      "Designed high-throughput, automated backend data pipelines to replace legacy manual workflows.",
-      "Transitioned to event-driven architectures supporting large-scale financial data systems.",
-      "Reduced manual processing efforts by 50% while ensuring continuous operational reliability.",
-      "Redesigned complex relational database schemas and optimized SQL query execution plans.",
-      "Deployed automated data sanitization pipelines, improving overall pristine data quality by 40%.",
-      "Resolved data bottlenecks by optimizing multithreaded backend distributed services.",
-      "Achieved a 30% sustained increase in overall system throughput across the environment."
+      "Designed and implemented high-throughput, automated backend data pipelines to replace legacy manual workflows, transitioning to event-driven architectures that supported large-scale, AI-driven financial systems and reduced manual processing efforts by 50%.",
+      "Led a critical database refactoring initiative, redesigning complex relational schemas and engineering automated data sanitization pipelines that improved pristine data quality by 40%, ensuring reliable feeds for downstream predictive ML models.",
+      "Resolved critical data bottlenecks by optimizing distributed processing workflows and multithreaded backend services, resulting in a 30% sustained increase in overall system throughput across the large-scale computing environment."
     ]
   },
   {
@@ -49,12 +41,9 @@ const workData = [
     type: "INTERNSHIP",
     status: "COMPLETED",
     highlights: [
-      "Spearheaded the migration of legacy batch CSV workflows into a real-time streaming architecture.",
-      "Utilized Apache Kafka, Flink, and Delta Lake to ingest millions of hardware sensor telemetry points.",
-      "Integrated live sensor feeds into real-time operational telemetry dashboards.",
-      "Reduced anomaly detection latency for factory floor equipment from several hours to under 60 seconds.",
-      "Trained predictive maintenance ML models using survival analysis and time-series feature engineering.",
-      "Achieved 30% faster fault detection and minimized false alarm rates compared to rule-based systems."
+      "Spearheaded the strategic migration of legacy, high-latency batch CSV workflows into a modern, real-time streaming data architecture utilizing Apache Kafka, Flink, and Delta Lake to successfully ingest millions of telemetry data points.",
+      "Integrated live hardware sensor feeds into real-time operational telemetry dashboards, dramatically reducing anomaly detection latency for critical factory floor equipment from several hours to under 60 seconds.",
+      "Developed, trained, and validated sophisticated predictive maintenance machine learning models using survival analysis algorithms and time-series feature engineering, achieving 30% faster fault detection compared to rule-based systems."
     ]
   }
 ];
