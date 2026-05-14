@@ -377,7 +377,8 @@ body {
   top: 16px;
   right: 16px;
   bottom: 16px;
-  width: 400px;
+  width: calc(100% - 32px);
+  max-width: 400px;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -486,6 +487,8 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #cbd5e1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* --- Experience Timeline --- */
