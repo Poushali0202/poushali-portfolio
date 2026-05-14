@@ -832,4 +832,98 @@ body {
   .form-grid { grid-template-columns: 1fr; }
   .info-content { padding: 30px; }
 }
+/* --- Accomplishments Section --- */
+.accomplishments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+@keyframes radiance-flicker {
+  0%, 100% { 
+    box-shadow: 0 0 15px rgba(var(--glow-rgb), 0.1); 
+    border-color: rgba(var(--glow-rgb), 0.2);
+  }
+  33% { 
+    box-shadow: 0 0 35px rgba(var(--glow-rgb), 0.35); 
+    border-color: rgba(var(--glow-rgb), 0.5);
+  }
+  66% { 
+    box-shadow: 0 0 20px rgba(var(--glow-rgb), 0.2); 
+    border-color: rgba(var(--glow-rgb), 0.3);
+  }
+}
+
+.accomplishment-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: rgba(10, 10, 10, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.accomplishment-card.border-cyan { --glow-rgb: 6, 182, 212; animation: radiance-flicker 5s infinite ease-in-out; }
+.accomplishment-card.border-purple { --glow-rgb: 168, 85, 247; animation: radiance-flicker 7s infinite ease-in-out; }
+.accomplishment-card.border-green { --glow-rgb: 34, 197, 94; animation: radiance-flicker 6s infinite ease-in-out; }
+
+.accomplishment-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 15px 50px rgba(var(--glow-rgb), 0.4) !important;
+  border-color: rgba(var(--glow-rgb), 0.8) !important;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.bg-cyan { background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.2); }
+.bg-purple { background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border: 1px solid rgba(168, 85, 247, 0.2); }
+.bg-green { background: rgba(34, 197, 94, 0.1); color: var(--accent-green); border: 1px solid rgba(34, 197, 94, 0.2); }
+.bg-muted { background: rgba(148, 163, 184, 0.1); color: var(--text-muted); border: 1px solid rgba(148, 163, 184, 0.2); }
+
+.accomplishment-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.accomplishment-event {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .accomplishments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .accomplishment-card {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .icon-container {
+    width: 44px;
+    height: 44px;
+  }
+
+  .accomplishment-title {
+    font-size: 16px;
+  }
+}

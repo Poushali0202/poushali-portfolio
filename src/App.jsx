@@ -20,6 +20,7 @@ import TerminalBoot from './TerminalBoot';
 import ProjectsDAG from './ProjectsDAG';
 import { WorkLogs, EducationLogs } from './ExperienceLogs';
 import ContactForm from './ContactForm';
+import Accomplishments from './Accomplishments';
 import './index.css';
 
 function App() {
@@ -228,6 +229,8 @@ function App() {
             <h2 className="section-title">Projects <span className="mono section-title-muted">[Pipeline DAG]</span></h2>
             <ProjectsDAG />
           </section>
+
+          <Accomplishments />
 
           <section id="contact" className="section-container">
             <h2 className="section-title">Message Dispatch <span className="mono section-title-muted">[Contact]</span></h2>
